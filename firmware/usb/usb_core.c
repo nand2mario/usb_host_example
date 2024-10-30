@@ -235,6 +235,11 @@ int usb_send_control_read(struct usb_device *dev, uint8_t request_type, uint8_t 
 
         received         += res;
         endp->data_toggle = !endp->data_toggle;
+
+        if (request == REQ_GET_DESCRIPTOR && (value >> 8) == DESC_STRING) {
+            USBLOG(USBLOG_INFO, ("USB: return from getting string descriptor\n"));
+            break;
+        }
     }
 
     // Status stage (if ok)
@@ -327,12 +332,19 @@ int usb_get_descriptor(struct usb_device *dev, uint16_t value, uint16_t index, u
                                 length);
 }
 
-char *usb_get_string(struct usb_device *dev, uint8_t index, char *buffer, int length) {
+char *usb_get_string(struct usb_device *dev, uint8_t str_index, char *buffer, int length) {
     int res;
     uint8_t str_desc[256];
     int str_len;
 
-    res = usb_get_descriptor(dev, DESC_STRING, index, str_desc, sizeof(str_desc));
+    res = usb_send_control_read(dev,
+                                (REQDIR_DEVICETOHOST | REQREC_DEVICE | REQTYPE_STANDARD), /* bmRequestType */
+                                REQ_GET_DESCRIPTOR, /* bRequest */
+                                (DESC_STRING<<8) + str_index, /* wValue */
+                                0, /* wIndex */
+                                sizeof(str_desc), /* wLength*/
+                                str_desc,
+                                sizeof(str_desc));
     if (res < 0) {
         return "Error";
     }
