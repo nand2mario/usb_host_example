@@ -333,7 +333,7 @@ int usbhw_transfer_in(uint8_t pid, int device_addr, int endpoint, uint8_t *respo
     if (status & (1 << USB_RX_STAT_RESP_TIMEOUT_SHIFT))
     {
        LOG(USBLOG_DATA, ("  TIMEOUT\n"));
-       LOG(USBLOG_ERR, ("USB: IN timeout\n"));
+    //    LOG(USBLOG_ERR, ("USB: IN timeout\n"));
        return USB_RES_TIMEOUT;
     }
 

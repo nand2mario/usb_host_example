@@ -81,7 +81,7 @@
  "Unused_Pin" : "As_input_tri_stated_with_pull_up",
  "VCC" : "0.9",
  "VCCAUX" : "3.3",
- "VCCX" : "3.3",
+ "VCCX" : "1.8",
  "VHDL_Standard" : "VHDL_Std_1993",
  "Verilog_Standard" : "Vlg_Std_Sysv2017",
  "WAKE_UP" : "0",

@@ -13,10 +13,6 @@ Screenshot:
 
 <img src="doc/screenshot.png" width=600>
 
-Wiring diagram. The mega 60K has an on-board USB-A socket. So in theory that should simply work. Somehow that does not work for me. So I wired up the port as follows.
-
-<img src="doc/wiring.png" width=400>
-
 nand2mario, 10/2024
 
 ## References
