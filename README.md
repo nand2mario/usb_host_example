@@ -17,4 +17,9 @@ Wiring diagram. The mega 60K has an on-board USB-A socket. So in theory that sho
 
 nand2mario, 10/2024
 
-
+## References
+* [USB made simple](https://www.usbmadesimple.co.uk/)
+* [USB in a nutshell](https://www.beyondlogic.org/usbnutshell/)
+* [Linux xpad driver](https://github.com/paroj/xpad)
+* [Xbox 360 controller protocol](https://github.com/xboxdrv/xboxdrv/blob/stable/PROTOCOL)
+* [Understanding the Xbox 360 Wired Controller’s USB Data](https://www.partsnotincluded.com/understanding-the-xbox-360-wired-controllers-usb-data/)
