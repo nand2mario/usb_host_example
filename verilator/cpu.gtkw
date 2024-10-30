@@ -1,0 +1,87 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Sat Oct 26 07:48:00 2024
+[*]
+[dumpfile] "D:\Gowin\dev\vexriscv-experiments\06.usb_new\verilator\waveform.fst"
+[dumpfile_mtime] "Sat Oct 26 07:14:06 2024"
+[dumpfile_size] 18612655
+[savefile] "D:\Gowin\dev\vexriscv-experiments\06.usb_new\verilator\cpu.gtkw"
+[timestart] 1289519
+[size] 1604 634
+[pos] -1 -1
+*-5.000000 1289581 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] TOP.
+[treeopen] TOP.vex_top.
+[treeopen] TOP.vex_top.u_iosys.
+[treeopen] TOP.vex_top.u_iosys.u_usb.
+[sst_width] 269
+[signals_width] 278
+[sst_expanded] 1
+[sst_vpaned_height] 163
+@28
+TOP.vex_top.clk_sys
+@22
+TOP.vex_top.led[7:0]
+@200
+-iosys
+@28
+[color] 2
+TOP.vex_top.u_iosys.ibus_cmd_valid
+TOP.vex_top.u_iosys.ibus_cmd_ready
+@22
+TOP.vex_top.u_iosys.ibus_cmd_pc[31:0]
+TOP.vex_top.u_iosys.mem_rdata[31:0]
+@28
+TOP.vex_top.u_iosys.ibus_rsp_ready
+[color] 2
+TOP.vex_top.u_iosys.dbus_cmd_valid
+TOP.vex_top.u_iosys.dbus_cmd_ready
+@22
+TOP.vex_top.u_iosys.dbus_cmd_a[31:0]
+@28
+TOP.vex_top.u_iosys.dbus_cmd_wr
+TOP.vex_top.u_iosys.dbus_rsp_ready
+@22
++{x8 (s0)} TOP.vex_top.u_iosys.rv.RegFilePlugin_regFile[8][31:0]
++{x10 (a0)} TOP.vex_top.u_iosys.rv.RegFilePlugin_regFile[10][31:0]
++{x11 (a1)} TOP.vex_top.u_iosys.rv.RegFilePlugin_regFile[11][31:0]
++{x12 (a2)} TOP.vex_top.u_iosys.rv.RegFilePlugin_regFile[12][31:0]
++{x13 (a3)} TOP.vex_top.u_iosys.rv.RegFilePlugin_regFile[13][31:0]
++{x14 (a4)} TOP.vex_top.u_iosys.rv.RegFilePlugin_regFile[14][31:0]
++{x15 (a5)} TOP.vex_top.u_iosys.rv.RegFilePlugin_regFile[15][31:0]
+TOP.vex_top.u_iosys.simpleuart.recv_divcnt[15:0]
+TOP.vex_top.u_iosys.simpleuart.send_divcnt[15:0]
+TOP.vex_top.u_iosys.simpleuart.cfg_divider[15:0]
+TOP.vex_top.u_iosys.simpleuart.send_bitcnt[3:0]
+@28
+TOP.vex_top.u_iosys.simpleuart.ser_tx
+TOP.vex_top.u_iosys.u_usb.usb_wr_data_wr_q
+@200
+-USB
+@28
+TOP.vex_top.u_iosys.u_usb.clk_i
+TOP.vex_top.u_iosys.u_usb.reg_cs
+TOP.vex_top.u_iosys.u_usb.reg_wr
+@22
+TOP.vex_top.u_iosys.u_usb.reg_addr[5:0]
+TOP.vex_top.u_iosys.u_usb.reg_rdata[31:0]
+@28
+TOP.vex_top.u_iosys.u_usb.usb_rx_stat_idle_in_w
+@200
+-SIE
+@24
+TOP.vex_top.u_iosys.u_usb.u_sie.state_q[3:0]
+@28
+TOP.vex_top.u_iosys.u_usb_xcvr.out_tx_oen
+TOP.vex_top.u_iosys.u_usb.u_sie.ifs_busy_w
+TOP.vex_top.u_iosys.u_usb.u_sie.wait_eop_q
+@22
+TOP.vex_top.u_iosys.u_usb.u_sie.tx_ifs_q[3:0]
+@28
+TOP.vex_top.u_iosys.u_usb.u_sie.eop_detected_w
+TOP.vex_top.u_iosys.u_usb.u_sie.se0_detect_q
+TOP.vex_top.u_iosys.u_usb.u_sie.utmi_linestate_i[1:0]
+TOP.vex_top.usb_dp
+TOP.vex_top.usb_dm
+[pattern_trace] 1
+[pattern_trace] 0

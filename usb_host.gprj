@@ -1,0 +1,22 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW5AT-60B" pn="GW5AT-LV60PG484AC1/I0">gw5at60b-002</Device>
+    <FileList>
+        <File path="src/VexRiscv.v" type="file.verilog" enable="1"/>
+        <File path="src/iosys2.v" type="file.verilog" enable="1"/>
+        <File path="src/mega60k/pll.v" type="file.verilog" enable="1"/>
+        <File path="src/simpleuart.v" type="file.verilog" enable="1"/>
+        <File path="src/usb1_host/usb_fs_phy.v" type="file.verilog" enable="1"/>
+        <File path="src/usb1_host/usb_transceiver.v" type="file.verilog" enable="1"/>
+        <File path="src/usb1_host/usbh_core.sv" type="file.verilog" enable="1"/>
+        <File path="src/usb1_host/usbh_crc16.sv" type="file.verilog" enable="1"/>
+        <File path="src/usb1_host/usbh_crc5.sv" type="file.verilog" enable="1"/>
+        <File path="src/usb1_host/usbh_fifo.sv" type="file.verilog" enable="1"/>
+        <File path="src/usb1_host/usbh_sie.sv" type="file.verilog" enable="1"/>
+        <File path="src/vex_top.v" type="file.verilog" enable="1"/>
+        <File path="src/mega60k/mega.cst" type="file.cst" enable="1"/>
+    </FileList>
+</Project>
