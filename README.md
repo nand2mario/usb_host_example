@@ -1,7 +1,7 @@
 
 ## Full-speed USB Host on Tang FPGA
 
-This is a full-speed USB (USB 1.1) host example on Tang Mega 60K. It uses a soft CPU ([VexRiscv](https://github.com/SpinalHDL/VexRiscv)) with an USB host module ([core_usb_host](https://github.com/ultraembedded/core_usb_host), with some code from [usb1_host](https://github.com/dineshannayya/usb1_host)). A simple firmware program demonstrates how to read from an Xbox 360 wireless controller. It supports reading of all control interface data, and controlling of LEDs on the controller.
+This is a full-speed USB (USB 1.1) host example on Tang Mega 60K. It uses a soft CPU ([VexRiscv](https://github.com/SpinalHDL/VexRiscv)) with an USB host module ([core_usb_host](https://github.com/ultraembedded/core_usb_host) / [usb1_host](https://github.com/dineshannayya/usb1_host)). A simple firmware program demonstrates how to read from an Xbox 360 wireless controller. It supports reading of all control interface data, and controlling of LEDs on the controller.
 
 There's a [prebuilt bitstream](https://github.com/nand2mario/usb_host_example/raw/refs/heads/master/usb_host.fs.zip) for the impatient.
 
